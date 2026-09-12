@@ -2,96 +2,67 @@
 
 
 
-# [Project Name] 🎯
+# NOBODY CARES 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: DESIGN SYNC 
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: RENA  - ASET
+- Member 2: PRITTY - ASET
 
 ### Project Description
-[2-3 lines about what your project does]
+Useless Project is a fun and interactive website designed to provide completely pointless but entertaining activities.
+It is developed using HTML, CSS, and JavaScript, focusing on creativity, UI design, and user interaction.
 
-### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+### The Problem 
+People get frustrated and need a fun way to release it.that doesn't exist
+People sometimes need a fun way to waste time and do absolutely nothing.
+
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
-
+Our website provides a playful digital space to express frustration and have fun through simple interactive activities.
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+-Languages used: HTML, CSS, JavaScript
+Frameworks used: None
+Libraries used: None
+Tools used: Antigravity, GitHub, Web Browser
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
 For Software:
 # Installation
-[commands]
-
+No special installation is required. Open the project in Antigravity and run it using a local server.
 # Run
-[commands]
+Open the local website in a web browser and interact with the features such as Rage Type, Circle Thing, and Mystery Window.
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1912" height="875" alt="Screenshot from 2026-09-12 09-01-22" src="https://github.com/user-attachments/assets/304f23a1-ed09-4a8b-907d-ade66ac429ab" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1912" height="875" alt="Screenshot from 2026-09-12 09-01-30" src="https://github.com/user-attachments/assets/130355c7-8ed5-49d8-9333-193a84226550" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+
+<img width="1912" height="875" alt="Screenshot from 2026-09-12 09-01-38" src="https://github.com/user-attachments/assets/9a7f8eeb-befa-4727-8167-a6a763b42868" />
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/45a1fa9a-ecf4-451d-b98c-1495dee8d563" />
+Our project follows a simple client-side architecture. The user accesses the website through a browser, where HTML and CSS create the interface and JavaScript handles all the interactions. We have three interactive modules—RageType, Circle Thing, and Mystery Window. Since our website is intentionally pointless, we don't use a backend, database, or API. Everything runs directly in the browser, and we use GitHub to manage our project.
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/file/d/1kD32M4WTZNYlEpizpC4QRa50YKdECCTF/view?usp=drive_link
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- rena: Designed the website interface, layout, and overall project concept.
+- pritty: Developed the interactive games, implemented the game logic using HTML, CSS, and JavaScript, and tested the website
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
