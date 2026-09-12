@@ -1,1 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOTHING – A Completely Useless Website featuring Rage Typing, the Circle Thing, and Mystery Window.">
+  <title>NOTHING – A Completely Useless Website</title>
+  
+  <!-- Google Fonts: Outfit & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
 
+  <!-- ============================================== -->
+  <!-- SPLASH SCREEN — Plays first, auto-dismisses   -->
+  <!-- ============================================== -->
+  <div id="splash-screen" class="splash-screen" aria-hidden="true">
+    <!-- Radial warm glow behind logo -->
+    <div class="splash-glow-ring"></div>
+
+    <!-- Logo + tagline stacked -->
+    <div class="splash-logo-wrap">
+      <img
+        src="logo.jpg"
+        alt="R🐼P — Nobody asked, but we made it"
+        class="splash-logo-img"
+        draggable="false"
+      >
+      <div class="splash-brand-row">
+        <span class="splash-brand-r">R</span>
+        <span class="splash-brand-panda">🐼</span>
+        <span class="splash-brand-p">P</span>
+      </div>
+      <p class="splash-tagline">nobody asked, but we made it</p>
+    </div>
+
+    <!-- Bottom loading line -->
+    <div class="splash-progress-bar">
+      <div class="splash-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- FINALE — TIME RESCUE COMPLETION PAGE           -->
+  <!-- ============================================== -->
+  <div id="confetti-layer" class="confetti-layer" aria-hidden="true"></div>
+
+  <!-- Persistent Top Navigation (Visible in mini-experiences) -->
+  <header id="top-nav" class="top-nav hidden">
+    <div class="nav-left">
+      <button id="nav-home-btn" class="nav-btn" aria-label="Return to Experiences Hub">
+        <span class="nav-icon">←</span>
+        <span class="nav-text">Experiences</span>
+      </button>
+      <button id="nav-landing-btn" class="nav-btn nav-btn-subtle" aria-label="Return to Front Page">
+        <span class="nav-text">Front Page</span>
+      </button>
+    </div>
+    <div class="nav-title">NOTHING<span class="dot">.</span></div>
+    <div class="nav-spacer"></div>
+  </header>
+
+  <!-- MAIN SPA CONTAINER -->
+  <main id="app-container">
+
+    <!-- ============================================== -->
+    <!-- 0. FRONT PAGE (LANDING ANNOUNCEMENT)           -->
+    <!-- ============================================== -->
+    <section id="view-landing" class="view view-landing active">
+      <div class="landing-hero-card">
+        <div class="modal-badge">
+          <span class="warning-icon">⚠️</span> IMPORTANT ANNOUNCEMENT
+        </div>
+
+        <h1 class="landing-title">
+          Congratulations.<br>
+          You have officially entered a website<br>
+          <span class="highlight-useless">that nobody asked for.</span>
+        </h1>
+
+        <p class="landing-subtitle">
+          Do absolutely nothing. That’s the whole point.
+        </p>
+
+        <!-- Preview tags of the mini-experiences -->
+        <div class="landing-features-preview">
+          <span class="preview-chip">💥 Rage Typing</span>
+          <span class="preview-chip">⭕ Circle Thing</span>
+          <span class="preview-chip">🪟 Mystery Window</span>
+        </div>
+
+        <div class="modal-action-wrapper">
+          <button id="landing-enter-btn" class="action-btn btn-enter-useless">
+            <span>ENTER THE USELESSNESS →</span>
+          </button>
+          <p class="modal-disclaimer">Your time will not be refunded.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 1. EXPERIENCES HUB / HOMEPAGE                  -->
+    <!-- ============================================== -->
+    <section id="view-home" class="view">
+      <div class="home-top-bar">
+        <button id="back-to-landing-btn" class="return-front-btn">
+          ← Front Page
+        </button>
+      </div>
+
+      <div class="home-hero">
+        <div class="badge-useless">
+          <span class="badge-pulse"></span>
+          100% UNPRODUCTIVE
+        </div>
+        <h1 class="main-title">NOTHING<span class="dot">.</span></h1>
+        <p class="subtitle">A website with absolutely no purpose.</p>
+        <p class="hero-description">
+          Welcome to the internet's most unapologetically pointless corner. 
+          Pick an experience below to begin wasting your valuable time.
+        </p>
+      </div>
+
+      <!-- Experience Cards Grid -->
+      <div class="cards-grid">
+        <!-- Card 1: Rage Typing -->
+        <div class="card card-rage" id="card-rage" tabindex="0" role="button" aria-label="Go to Rage Typing">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="card-tag">VENTING VOID</span>
+            <span class="card-emoji">💥</span>
+          </div>
+          <h2 class="card-title">RAGE TYPE</h2>
+          <p class="card-desc">
+            Scream into a bottomless digital pit. Type your heart out, smash your keys, and release it into nonexistence.
+          </p>
+          <div class="card-footer">
+            <span class="card-btn-text">Start Raging</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Circle Thing -->
+        <div class="card card-circles" id="card-circles" tabindex="0" role="button" aria-label="Go to Circle Game">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="card-tag">FUTILE PHYSICS</span>
+            <span class="card-emoji">⭕</span>
+          </div>
+          <h2 class="card-title">CIRCLE THING</h2>
+          <p class="card-desc">
+            Drag useless floating circles into a slightly larger useless circle. Zero reward, zero satisfaction guaranteed.
+          </p>
+          <div class="card-footer">
+            <span class="card-btn-text">Drag Nothing</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Mystery Window -->
+        <div class="card card-window" id="card-window" tabindex="0" role="button" aria-label="Go to Mystery Window">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="card-tag">POINTLESS PEEPHOLE</span>
+            <span class="card-emoji">🪟</span>
+          </div>
+          <h2 class="card-title">MYSTERY WINDOW</h2>
+          <p class="card-desc">
+            Open an interactive window to behold 12+ completely random, ridiculous, and underwhelming views of nowhere.
+          </p>
+          <div class="card-footer">
+            <span class="card-btn-text">Look Outside</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="home-footer">
+        <p>Zero cookies. Zero trackers. Zero point.</p>
+      </footer>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 4. FINALE: TIME RESCUE COMPLETE                -->
+    <!-- ============================================== -->
+    <section id="view-finale" class="view">
+      <div class="finale-hero-card">
+        <div class="finale-glow-ring"></div>
+
+        <div class="modal-badge">
+          <span class="warning-icon">🏆</span> MISSION ACCOMPLISHED
+        </div>
+
+        <h1 class="finale-title">🎉 You have successfully rescued time!</h1>
+
+        <p class="finale-subtitle">
+          You’ve completed all the useless activities.<br>
+          Congratulations… <span class="finale-highlight">you did absolutely nothing!</span>
+        </p>
+
+        <div class="finale-stats-row">
+          <span class="finale-stat-chip">⏱️ <strong>∞</strong> minutes wasted</span>
+          <span class="finale-stat-chip">🏅 <strong>0</strong> XP earned</span>
+          <span class="finale-stat-chip">😌 <strong>100%</strong> accomplishment</span>
+        </div>
+
+        <div class="modal-action-wrapper">
+          <button id="finale-start-again-btn" class="finale-start-btn">
+            <span class="finale-btn-shine"></span>
+            <span class="finale-btn-emoji">🔄</span>
+            <span class="finale-btn-label">Start Again</span>
+          </button>
+          <p class="finale-cta-line">Want to waste more time? Click Start Again!</p>
+        </div>
+
+        <footer class="home-footer finale-footer">
+          <p>Time rescued: 100%. Refunds: still unavailable.</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 1. RAGE TYPING EXPERIENCE                     -->
+    <!-- ============================================== -->
+    <section id="view-rage" class="view">
+      <div class="experience-header">
+        <h2 class="experience-title">RAGE TYPING</h2>
+        <p class="experience-instruction">Type whatever you want. No database. No recovery. Just release.</p>
+        <div class="rage-stats">
+          <span id="rage-char-count">0 characters</span>
+          <span class="stat-divider">•</span>
+          <span id="rage-intensity-label">Zen</span>
+        </div>
+      </div>
+
+      <!-- Typing Canvas Box -->
+      <div class="rage-typing-container" id="rage-container">
+        <textarea 
+          id="rage-textarea" 
+          placeholder="Start smashing your keyboard here... Vent your frustrations, confessions, or pure gibberish..."
+          spellcheck="false"
+          autocomplete="off"
+          autocapitalize="off"
+        ></textarea>
+        
+        <!-- Ash particles overlay container for release animation -->
+        <div id="rage-particles" class="particles-layer"></div>
+      </div>
+
+      <!-- Controls -->
+      <div class="experience-controls">
+        <button id="rage-release-btn" class="action-btn btn-danger">
+          <span class="btn-icon">⚡</span>
+          <span class="btn-label">RELEASE TO THE VOID</span>
+        </button>
+      </div>
+
+      <!-- Toast Feedback Message -->
+      <div id="rage-toast" class="toast hidden">
+        ✨ Your words have vanished into thin air forever.
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 2. CIRCLE GAME EXPERIENCE                     -->
+    <!-- ============================================== -->
+    <section id="view-circles" class="view">
+      <div class="experience-header">
+        <h2 class="experience-title">CIRCLE THING</h2>
+        <p class="experience-instruction">Drag every floating circle into the center void.</p>
+        <div class="circles-counter-badge">
+          Circles Remaining: <strong id="circles-remaining">6</strong>
+        </div>
+      </div>
+
+      <!-- Drag & Drop Arena -->
+      <div class="circle-arena" id="circle-arena">
+        <!-- Target Center Circle -->
+        <div class="target-circle" id="target-circle">
+          <div class="target-pulse"></div>
+          <div class="target-content">
+            <span class="target-icon">◎</span>
+            <span class="target-text">DROP HERE</span>
+          </div>
+        </div>
+
+        <!-- Draggable circles will be dynamically populated by script.js -->
+        <div id="draggable-circles-wrapper" class="circles-wrapper"></div>
+      </div>
+
+      <!-- Victory Overlay Modal (Hidden by default) -->
+      <div id="circles-victory-modal" class="victory-modal hidden">
+        <div class="victory-card">
+          <div class="victory-emoji">🎉</div>
+          <h3 class="victory-title">Congratulations!</h3>
+          <p class="victory-message">You accomplished absolutely nothing.</p>
+          <p class="victory-submessage">Your reward is 0 XP, 0 dollars, and 30 seconds gone forever.</p>
+          <div class="victory-actions">
+            <button id="circles-reset-btn" class="action-btn btn-cyan">
+              Do Nothing Again ↻
+            </button>
+            <button id="circles-finish-btn" class="action-btn btn-amber">
+              Claim Reward 🏆
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 3. MYSTERY WINDOW EXPERIENCE                  -->
+    <!-- ============================================== -->
+    <section id="view-window" class="view">
+      <div class="experience-header">
+        <h2 class="experience-title">MYSTERY WINDOW</h2>
+        <p class="experience-instruction">Open the window to witness the world outside.</p>
+      </div>
+
+      <!-- Realistic Interactive Window Stage -->
+      <div class="window-stage">
+        <div class="window-outer-frame" id="interactive-window">
+          
+          <!-- Background Scenario Viewport (Behind Shutters) -->
+          <div class="window-scenery-viewport" id="window-viewport">
+            <div class="scenario-container" id="active-scenario">
+              <!-- Random scenario rendered by script.js -->
+            </div>
+          </div>
+
+          <!-- Glass Sheen Layer -->
+          <div class="window-glass-glare"></div>
+
+          <!-- Window Shutters / Panes (Left & Right 3D Shutters) -->
+          <div class="window-shutter shutter-left" id="shutter-left">
+            <div class="shutter-slats">
+              <div class="slat"></div>
+              <div class="slat"></div>
+              <div class="slat"></div>
+              <div class="slat"></div>
+            </div>
+            <div class="shutter-knob"></div>
+          </div>
+
+          <div class="window-shutter shutter-right" id="shutter-right">
+            <div class="shutter-slats">
+              <div class="slat"></div>
+              <div class="slat"></div>
+              <div class="slat"></div>
+              <div class="slat"></div>
+            </div>
+            <div class="shutter-knob"></div>
+          </div>
+
+          <!-- Bottom Window Sill -->
+          <div class="window-sill"></div>
+        </div>
+      </div>
+
+      <!-- Window Control Buttons -->
+      <div class="window-controls">
+        <button id="window-open-btn" class="action-btn btn-amber">
+          <span class="btn-icon">🪟</span>
+          <span class="btn-label">OPEN WINDOW</span>
+        </button>
+        <button id="window-close-btn" class="action-btn btn-secondary hidden">
+          <span class="btn-icon">✕</span>
+          <span class="btn-label">CLOSE WINDOW</span>
+        </button>
+      </div>
+
+      <div class="scenario-counter-label" id="scenario-counter-label">
+        Click to see a random view
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
